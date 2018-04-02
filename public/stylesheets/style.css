@@ -1,0 +1,17 @@
+html, body{
+    height: 100%
+}
+
+.slide {
+    margin-top: 0;
+    height: auto
+}
+
+.card {
+    height: 100%;
+}
+
+.head-background {
+    height: 200px;
+}
+
