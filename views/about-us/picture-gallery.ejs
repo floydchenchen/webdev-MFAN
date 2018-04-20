@@ -1,5 +1,8 @@
 <!--header-->
 <% include ../partials/header %>
+<link rel="stylesheet" href="/stylesheets/gallery-grid.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
 
 <div class="jumbotron jumbotron-fluid head-background">
     <div class="container">
@@ -7,9 +10,29 @@
     </div>
 </div>
 
+<div class="container gallery-container">
 
+    <div class="tz-gallery">
+        <div class="row">
+        <% for (var i = 1; i <= 9; i++) { %>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/gallery/00<%= i %>.jpg">
+                    <img src="../images/gallery/00<%= i %>.jpg" alt="">
+                </a>
+            </div>
+        <% } %>
+        <% for (var i = 10; i <= 12; i++) { %>
+        <div class="col-sm-6 col-md-4">
+            <a class="lightbox" href="../images/gallery/0<%= i %>.jpg">
+                <img src="../images/gallery/0<%= i %>.jpg" alt="">
+            </a>
+        </div>
+        <% } %>
+        </div>
 
+    </div>
 
+</div>
 
 
 
@@ -19,3 +42,7 @@
 
 <!--footer-->
 <% include ../partials/footer %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
