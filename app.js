@@ -51,3 +51,8 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+var listener = app.listen(process.env.PORT || 8000, process.env.IP, function() {
+    console.log("Port number: " + listener.address.port);
+    console.log("IP Address: " + listener.address.ip);
+});
