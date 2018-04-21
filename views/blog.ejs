@@ -1,71 +1,47 @@
 <!--header-->
 <% include ./partials/header %>
+<link rel="stylesheet" href="/stylesheets/blog.css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-<div class="jumbotron jumbotron-fluid head-background">
+<header class="masthead" style="background-image: url('/images/home-bg.jpg')">
+    <div class="overlay"></div>
     <div class="container">
-        <h1 class="display-4">Blog</h1>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h1>MFAN Blog</h1>
+                    <!--<span class="subheading">A Blog Theme by Start Bootstrap</span>-->
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</header>
 
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        Man must explore, and this is exploration at its greatest
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Problems look mighty small from 150 miles up
-                    </h3>
+                <a href="/blog/003">
+                    <h2 class="post-title">From Divide to Dividends: A Tour of Minnesota's Shared Connections</h2>
                 </a>
-                <p class="post-meta">Posted by
-                    <a href="#">Start Bootstrap</a>
-                    on September 24, 2018</p>
+                <p class="post-meta">Posted by <a class="text-primary">Jamie Bain</a> on February 27, 2018</p>
             </div>
             <hr>
+
             <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                    </h2>
+                <a href="/blog/002">
+                    <h2 class="post-title">Metro Community Meal: Envisioning a Food System We All Deserve</h2>
                 </a>
-                <p class="post-meta">Posted by
-                    <a href="#">Start Bootstrap</a>
-                    on September 18, 2018</p>
+                <p class="post-meta">Posted by <a class="text-primary">Jamie Bain</a> on February 08, 2018</p>
             </div>
             <hr>
+
             <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        Science has not yet mastered prophecy
-                    </h2>
-                    <h3 class="post-subtitle">
-                        We predict too much for the next year and yet far too little for the next ten.
-                    </h3>
+                <a href="/blog/001">
+                    <h2 class="post-title">Ways to ACT NOW to give input to your city’s comprehensive plans</h2>
                 </a>
-                <p class="post-meta">Posted by
-                    <a href="#">Start Bootstrap</a>
-                    on August 24, 2018</p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        Failure is not an option
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-                    </h3>
-                </a>
-                <p class="post-meta">Posted by
-                    <a href="#">Start Bootstrap</a>
-                    on July 8, 2018</p>
-            </div>
-            <hr>
-            <!-- Pager -->
-            <div class="clearfix">
-                <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+                <p class="post-meta">Posted by <a class="text-primary">Jamie Bain</a> on February 08, 2018</p>
             </div>
         </div>
     </div>
@@ -73,6 +49,7 @@
 
 <hr>
 
+<script src="/javascripts/blog.js"></script>
 
 <!--footer-->
 <% include ./partials/footer %>
