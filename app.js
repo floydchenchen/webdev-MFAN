@@ -11,9 +11,12 @@ var eventsRouter = require('./routes/events');
 var partnersRouter = require('./routes/partners');
 var resourcesRouter = require('./routes/resources');
 var blogRouter = require('./routes/blog');
-
+var contactUsRouter = require('./routes/contact-us');
 
 var app = express();
+
+var bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({extended : true}));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -25,6 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/about-us', aboutUsRouter);
@@ -32,6 +36,7 @@ app.use('/events', eventsRouter);
 app.use('/partners', partnersRouter);
 app.use('/resources', resourcesRouter);
 app.use('/blog', blogRouter);
+app.use('/contact-us', contactUsRouter);
 
 
 // catch 404 and forward to error handler

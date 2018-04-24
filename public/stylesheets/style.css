@@ -39,3 +39,8 @@ html, body{
     transform: translateY(-50%);
     bottom: initial;
 }
+
+
+.red{
+    color:red;
+}
