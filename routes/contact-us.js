@@ -32,7 +32,7 @@ router.post('/', function(req, res) {
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"MFAN Admin', // sender address
-        to: 'chen2918@umn.edu', // list of receivers
+        to: 'jbain@umn.edu', // list of receivers
         subject: req.body.subject, // Subject line
         text: req.body.message + "\n\n" + req.body.email + "\n" + req.body.name, // plain text body
         html: '' // html body
