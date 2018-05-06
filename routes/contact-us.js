@@ -4,22 +4,27 @@ const nodemailer = require('nodemailer');
 
 router.use(require('body-parser').urlencoded({ extended: true }));
 
+var api = process.env.MAP_API;
+
 // const sendmail = require('sendmail')();
 
 var user = process.env.MAIL_USERNAME;
 var pass = process.env.MAIL_PASSWORD;
+// var api = process.env.API;
 
 router.post('/', function(req, res) {
 
     // sendmail({
     //     from: req.body.email,
-    //     to: 'chen2918@umn.edu',
+    //     to: 'fjn19971007@outlook.com',
     //     subject: req.body.subject,
     //     html: req.body.message + "\n\n" + req.body.name
     // }, function(err, reply) {
     //     console.log(err && err.stack);
     //     console.dir(reply);
     // });
+
+
 
     let transporter = nodemailer.createTransport({
         service: 'gmail',
